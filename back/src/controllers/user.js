@@ -45,9 +45,6 @@ export const updateUser = async (req, res) => {
             email,
             password
         } = req.body
-        console.log({
-            id: req.params.id
-        })
         const updateUserById = await putUserService.updateOneUser(req.params.id, {
             name,
             email,

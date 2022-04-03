@@ -6,7 +6,7 @@ User.get('/', userController.fetchUsers);
 
 User.get('/:id', userController.fetchUser);
 
-User.post('/register', userController.createUser);
+User.post('/signup', userController.createUser);
 
 User.put('/:id', userController.updateUser);
 
