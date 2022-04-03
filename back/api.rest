@@ -1,0 +1,3 @@
+@dev = http://localhost:3000
+###
+// Pour tester les routes avec Rest client
