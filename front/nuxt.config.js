@@ -3,7 +3,7 @@ export default {
         "@nuxtjs/vuetify"
     ],
     modules: [
-        "@nuxtjs/axios"
+        "@nuxtjs/axios",
     ],
     components: true,
 }

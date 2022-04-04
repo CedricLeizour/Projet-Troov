@@ -1,12 +1,18 @@
 <template>
+<!-- Liste de tous les utilisateurs, avec boutons de modification et suppression -->
   <div>
+    <br />
     <h2>Tableau des Users</h2>
     <v-data-table :headers="headers" :items="users">
       <template v-slot:[`item.edit`]="{ item }">
-        <v-btn color="green" @click="editItem(item)"> Edit </v-btn>
+        <v-btn @click="editItem(item)">  
+          <v-icon>mdi-pencil</v-icon> Edit 
+        </v-btn>
       </template>
       <template v-slot:[`item.delete`]="{ item }">
-        <v-btn color="danger" @click="deleteItem(item._id)"> Delete </v-btn>
+        <v-btn @click="deleteItem(item._id)">
+          <v-icon>mdi-delete</v-icon> Delete 
+        </v-btn>
       </template>
     </v-data-table>
   </div>

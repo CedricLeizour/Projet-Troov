@@ -1,4 +1,5 @@
 <template>
+<!-- Formulaire pour créer un utilisateur -->
   <div>
     <br />
     <h2>Créer un User</h2>
