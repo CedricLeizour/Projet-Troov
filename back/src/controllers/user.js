@@ -4,6 +4,7 @@ import * as postUserService from '../services/user/post';
 import * as deleteUserService from '../services/user/delete';
 
 
+//Pour récupérer tous les users
 export const fetchUsers = async (req, res) => {
     try{
         res.status(200).json((await getUserService.getAllUsers()));
@@ -12,6 +13,7 @@ export const fetchUsers = async (req, res) => {
     }
 }
 
+//Pour récupérer un seul user
 export const fetchUser = async (req, res) => {
     try{
         res.status(200).json((await getUserService.getOneUser(req.params.id)));
@@ -20,6 +22,7 @@ export const fetchUser = async (req, res) => {
     }
 }
 
+//Pour créer un user
 export const createUser = async (req, res) => {
     try {
         const {
@@ -38,6 +41,7 @@ export const createUser = async (req, res) => {
     }
 }
 
+//Pour mettre à jour un user
 export const updateUser = async (req, res) => {
     try {
         const {
@@ -56,6 +60,7 @@ export const updateUser = async (req, res) => {
     }
 }
 
+//Pour supprimer un user
 export const deleteUser = async (req, res) => {
     try {
         const userDeleted = await deleteUserService.removeOneUser(req.params.id)

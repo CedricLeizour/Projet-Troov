@@ -2,7 +2,7 @@
 
 ###
 // Test de la route pour afficher tous les users
-GET {{dev}}/
+GET {{dev}}/users
 
 ###
 // Test de la route pour créer un user
@@ -17,11 +17,11 @@ Content-Type: application/json
 
 ###
 // Test de la route pour afficher un user (grâce à son id)
-GET  {{dev}}/6249b700cdc7ab2582e212ec
+GET  {{dev}}/users/6249b6b87cb07d0ee742cc7b
 
 ###
 // Test de la route pour modifier un user
-PUT  {{dev}}/6249b700cdc7ab2582e212ec
+PUT  {{dev}}/users/6249b6b87cb07d0ee742cc7b
 Content-Type: application/json
 
 {
@@ -34,7 +34,7 @@ Content-Type: application/json
 
 ###
 // Test de la route pour supprimer un user
-DELETE  {{dev}}/6249b700cdc7ab2582e212ec
+DELETE  {{dev}}/users/6249b6b87cb07d0ee742cc7b
 
 ###
 
